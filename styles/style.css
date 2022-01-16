@@ -6,32 +6,34 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
+
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-section {
-    margin-top: 100px;
+
+.container{
+    border: 1px solid red;
+    width: 80%;
+    margin-bottom: 100px;
 }
+
 h1{
     font-size: 52px;
 }
 h2{
     font-size: 28px;
 }
-
 h3{
     font-size: 24px;
 }
-p{
-    color: #3A3A3A;
-    font-weight: 600;
-}
+
 .link-btn {
     text-decoration: none;
     background-color: #E02C6D;
     padding: 10px 24px;
-    color: white;
+    color: #FFFFFF;
     border-radius: 41px;
 }
 
@@ -44,31 +46,53 @@ p{
     header styles 
 ------------------- */
 header{
-    padding: 0 120px;
+    display: flex;
+    justify-content: center;
+}
+nav{
+    border: 1px solid red;
+    width: 80%;
+    margin-top: 63px;
+    margin-bottom: 18px;
 }
 nav a{
     text-decoration: none;
     color: #3A3A3A;
 }
 
+/* -------------------
+    banner styles
+---------------------- */
 .banner-area {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 72px;
 }
+
 .banner-info {
+    border: 1px solid red;
     width: 582px;
 }
 .banner-info h1{
+    color: #3A3A3A;
     margin: 0;
 }
 .banner-info p{
+    color: #3A3A3A;
+    font-weight: 600;
     margin-bottom: 40px;
 }
 
+.banner{
+    border: 3px solid #F1E4FF;
+    width: 475px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
 /* -------------------
-    products styles
+    products style
 ---------------------- */
 .section-title{
     font-weight: 600;
@@ -81,17 +105,17 @@ nav a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .product{
-    width: 329px;
+    /* width: 329px; */
     height: 476px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 14px;
     border-radius: 5px;
 }
-.product .thumbnail img{
+.product-thumbnail img{
     width: 100%;
     border-radius: 5px;
 }
@@ -99,13 +123,13 @@ nav a{
     font-weight: 500;
     color: #18191F;
     margin-top: 16px;
-    margin-bottom: 0;
+    margin-bottom: 6px;
 }
 .product-price{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.87);
-    margin-top: 6px;
+    margin-top: 0;
     margin-bottom: 8px;
 }
 
@@ -115,9 +139,6 @@ nav a{
 .fa-star.filled {
     color: #FB8200;
 }
-.fa-star.empty {
-    color: lightgray;
-}
 .rating-number{
     font-weight: 700;
     font-size: 14px;
@@ -126,40 +147,43 @@ nav a{
     margin-left: 8px;
 }
 
-.product-info{
+.product-description{
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 0.018em;
     color: #787885;
-    margin-top: 3px;
+    margin: 3px 0;
 }
-
-.product-area a {
-    text-decoration: none;
-    font-weight: 700;
-    color: rgba(224, 44, 109, 0.87);
+.see-more{
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.see-more a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #E02C6D;
+    /* align-items: center; */
 }
 
 /* -----------------
     footer style 
 -------------------- */
 footer{
-    margin-top: 100px;
     background-color: #0A0826;
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 .footer-info{
+    width: 262px;
     text-align: center;
 }
 .footer-info h3{
+    color: #FFFFFF;
     margin-top: 0;
     margin-bottom: 3px;
 }
@@ -170,7 +194,7 @@ footer{
     margin-top: 0;
     margin-bottom: 3px;
 }
-.footer-info .icons{
+.icons{
     margin-top: 14px;
     display: flex;
     justify-content: space-evenly;
@@ -184,8 +208,8 @@ footer{
     border-radius: 16px;
     background-color: rgba(128, 128, 128, 0.233);
 }
-.fab.social-icon{
-    font-size: 16px;
+.fab{
+    font-size: 15px;
     color: #FFFFFF;
 }
 
@@ -196,12 +220,45 @@ footer{
 
 /* Mobile devices */
 @media only screen and (max-width: 688px) {
-    header{
-        background-color: lightslategray;
+    nav{
+        display: flex;
+        justify-content: center;
+        margin-top: 11px;
+        margin-bottom: 0;
     }
-    /* .container{
+    nav h3{
+        margin-bottom: 22px;
+    }
+
+    .container{
         width: 100%;
-    } */
+    }
+
+    .banner-area{
+        flex-direction: column-reverse;
+    }
+    .banner, .banner-info{
+        width: 90%;
+    }
+    .banner img{
+        width: 90%;
+    }
+    .banner-info{
+        text-align: center;
+    }
+    .banner-info h1{
+        font-size: 28px;
+        margin-top: 14px;
+    }
+    
+    .product-area{
+        width: 90%;
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    
     /* .players, .blogs, .courses{
         grid-template-columns: repeat(1, 1fr);
     }
