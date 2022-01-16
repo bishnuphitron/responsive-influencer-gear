@@ -1,0 +1,211 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@500;600;700&display=swap');
+
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+section {
+    margin-top: 100px;
+}
+h1{
+    font-size: 52px;
+}
+h2{
+    font-size: 28px;
+}
+
+h3{
+    font-size: 24px;
+}
+p{
+    color: #3A3A3A;
+    font-weight: 600;
+}
+.link-btn {
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: white;
+    border-radius: 41px;
+}
+
+.fa-arrow-right{
+    font-size: 16px;
+    margin-left: 8px;
+}
+
+/* ----------------
+    header styles 
+------------------- */
+header{
+    padding: 0 120px;
+}
+nav a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+.banner-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 72px;
+}
+.banner-info {
+    width: 582px;
+}
+.banner-info h1{
+    margin: 0;
+}
+.banner-info p{
+    margin-bottom: 40px;
+}
+
+/* -------------------
+    products styles
+---------------------- */
+.section-title{
+    font-weight: 600;
+    color: #3A3A3A;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 50px;
+}
+.product{
+    width: 329px;
+    height: 476px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 14px;
+    border-radius: 5px;
+}
+.product .thumbnail img{
+    width: 100%;
+    border-radius: 5px;
+}
+.product-name{
+    font-weight: 500;
+    color: #18191F;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.product-price{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled {
+    color: #FB8200;
+}
+.fa-star.empty {
+    color: lightgray;
+}
+.rating-number{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    color: #5E6366;
+    margin-left: 8px;
+}
+
+.product-info{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.018em;
+    color: #787885;
+    margin-top: 3px;
+}
+
+.product-area a {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgba(224, 44, 109, 0.87);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* -----------------
+    footer style 
+-------------------- */
+footer{
+    margin-top: 100px;
+    background-color: #0A0826;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.footer-info{
+    text-align: center;
+}
+.footer-info h3{
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+.footer-info p{
+    font-weight: 700;
+    font-size: 14px;
+    color: #D9DBE1;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+.footer-info .icons{
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: rgba(128, 128, 128, 0.233);
+}
+.fab.social-icon{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+
+/* --------------------
+    Media Queries 
+----------------------- */
+
+/* Mobile devices */
+@media only screen and (max-width: 688px) {
+    header{
+        background-color: lightslategray;
+    }
+    /* .container{
+        width: 100%;
+    } */
+    /* .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .single-player, .blog, .course{
+        flex-direction: column;
+    } */
+}
