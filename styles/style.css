@@ -257,12 +257,39 @@ footer{
     .products{
         grid-template-columns: repeat(1, 1fr);
     }
-    
-    
-    /* .players, .blogs, .courses{
-        grid-template-columns: repeat(1, 1fr);
+}
+
+/* ------------------
+    Tablet Devices 
+--------------------- */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    nav h3{
+        text-align: center;
     }
-    .single-player, .blog, .course{
-        flex-direction: column;
-    } */
+    .container{
+        width: 100%;
+    }
+    .banner-area{
+        justify-content: space-evenly;
+    }
+    .banner, .banner-info{
+        width: 45%;
+    }
+    .banner-info{
+        text-align: center;
+    }
+    .banner-info h1{
+        font-size: 28px;
+        /* margin-top: 14px; */
+    }
+    .banner img{
+        width: 90%;
+    }
+
+    .product-area{
+        width: 90%;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
