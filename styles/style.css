@@ -14,7 +14,6 @@ main{
 }
 
 .container{
-    border: 1px solid red;
     width: 80%;
     margin-bottom: 100px;
 }
@@ -50,7 +49,6 @@ header{
     justify-content: center;
 }
 nav{
-    border: 1px solid red;
     width: 80%;
     margin-top: 63px;
     margin-bottom: 18px;
@@ -70,7 +68,6 @@ nav a{
 }
 
 .banner-info {
-    border: 1px solid red;
     width: 582px;
 }
 .banner-info h1{
@@ -169,6 +166,37 @@ nav a{
 }
 
 /* -----------------
+    subscribes style 
+-------------------- */
+
+.subscribe-area{
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+.subscribe-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe-container input{
+    padding: 8px;
+    border: lightgray;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+.subscribe-container button{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 41px;
+    font-weight: 700;
+}
+
+/* -----------------
     footer style 
 -------------------- */
 footer{
@@ -179,7 +207,7 @@ footer{
     align-items: center;
 }
 .footer-info{
-    width: 262px;
+    width: 270px;
     text-align: center;
 }
 .footer-info h3{
@@ -256,6 +284,14 @@ footer{
     }
     .products{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .subscribe-container{
+        flex-direction: column;
+    }
+    .subscribe-container input{
+        margin-bottom: 10px;
+        width: 90%;
     }
 }
 
